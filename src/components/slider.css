@@ -1,0 +1,48 @@
+.slider-track{
+    display: flex;
+    width: calc(250px*8);
+    animation: scroll 10s linear infinite;
+}
+.slider-track:hover{
+    animation-play-state: paused;
+}
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    
+}
+img{
+    width: 100%;
+    transition: all 0.8s ease ;
+}
+img:hover{
+   transform: translateZ(10px);
+}
+.slider{
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+/* gradient shadows  */
+
+
+
+
+@keyframes scroll {
+    
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-250px*3));
+    }
+}
