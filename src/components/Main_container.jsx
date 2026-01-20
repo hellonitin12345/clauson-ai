@@ -1,7 +1,9 @@
-import React from 'react'
+
 import Navbar from './Navbar'
 import Hero from './Hero'
 import Slider from './Slider'
+import Section01 from './Section01'
+
 
 const Main_container = () => {
   return (
@@ -11,6 +13,8 @@ const Main_container = () => {
           <Navbar/>
           <Hero/>
           <Slider/>
+          <Section01/>
+          
         </div>
   )
 }
