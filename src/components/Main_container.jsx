@@ -8,7 +8,7 @@ const Main_container = () => {
     
         <div className='main-container  h-screen'>
 
-          <Navbar/>
+          
           <Hero/>
           <Slider/>
         </div>
