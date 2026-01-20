@@ -6,14 +6,14 @@ const Navbar = () => {
   return (
     <>
     
-      <div id='corner-design' className='bg-[#B1E0FC] opacity-20 h-50 absolute top-0 -left-20 w-100 flex justify-center blur-lg'></div>
+      <div id='corner-design' className='bg-[#B1E0FC] opacity-20 lg:h-50  h-25 w-50 absolute top-0 -left-20 lg:w-100 flex justify-center blur-lg'></div>
 
 
       <nav className='navbar w-full 
             relative grid grid-cols-3 '>
 
 
-        <div className='text-4xl flex items-center pl-20 py-9'><h1 className='text-black font-clauson'>ClausonAI</h1>
+        <div className='lg:text-4xl text-sm flex items-center lg:pl-20 lg:py-9'><h1 className='text-black font-clauson'>ClausonAI</h1>
 
         </div>
         <div className=' text-[#121215] flex items-center text-xl justify-between py-9 '>
