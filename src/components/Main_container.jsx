@@ -1,8 +1,10 @@
 
 import Navbar from './Navbar'
 import Hero from './Hero'
-import Slider from './Slider'
+
 import Section01 from './Section01'
+import InfiniteSlider from './InfiniteSlider'
+import Section02 from './Section02'
 
 
 const Main_container = () => {
@@ -12,8 +14,10 @@ const Main_container = () => {
 
           <Navbar/>
           <Hero/>
-          <Slider/>
+          <InfiniteSlider/>
           <Section01/>
+          <Section02/>
+          
           
         </div>
   )

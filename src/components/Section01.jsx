@@ -17,7 +17,7 @@ const Section01 = () => {
         setIsPlaying(false);
     };
     return (
-        <div className='main-parent grid max-w-[90%] mx-auto gap-8'>
+        <div className='main-parent grid max-w-[90%] mx-auto mt-30 gap-8'>
 
             <div className='flex flex-col gap-2 items-center'>
                 <div>
@@ -50,7 +50,7 @@ const Section01 = () => {
                 )}
             </div>
 
-            <div className='w-full grid grid-cols-3 mb-40'>
+            <div className='w-full grid grid-cols-3'>
 
                 <div 
                 tabIndex={0}
@@ -61,7 +61,7 @@ const Section01 = () => {
                focus-within:to-[#0CA4FF]'>
                     <div className='p-2 bg-white rounded-xl'>
                         <div 
-                        tabIndex={0}
+                        tabIndex={0} // kbhi bhi focus ka use div pe karna ho to tabindex ko 0 rakhna hoga
                         className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
                          pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl'>
                             <h2  className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Choose Document Type</h2>
@@ -82,8 +82,8 @@ const Section01 = () => {
                         tabIndex={0}
                         className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
                         pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl'>
-                            <h2  className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Choose Document Type</h2>
-                            <p className='max-w-86 text-[#000000B2] -tracking-[1%] text-[16px] font-normal font-clauson'>Select from NDAs, service agreements, employment contracts, or loan agreements.</p>
+                            <h2  className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Answer Simple Questions</h2>
+                            <p className='max-w-90 text-[#000000B2] -tracking-[1%] text-[16px] font-normal font-clauson'>Our wizard walks you through a few questions about your specific needs.</p>
                         </div>
                     </div>
                 </div>
@@ -100,8 +100,8 @@ const Section01 = () => {
                         tabIndex={0}
                         className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
                         pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl'>
-                            <h2 className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Choose Document Type</h2>
-                            <p className='max-w-86 text-[#000000B2] -tracking-[1%] text-[16px] font-normal font-clauson'>Select from NDAs, service agreements, employment contracts, or loan agreements.</p>
+                            <h2 className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Download & Use</h2>
+                            <p className='max-w-94 text-[#000000B2] -tracking-[1%] text-[16px] font-normal font-clauson'>Get your professional document instantly. Edit, save, and download as PDF or DOCX.</p>
                         </div>
                     </div>
                 </div>
