@@ -48,30 +48,30 @@ const InfiniteSlider = () => {
     <div className="slider" ref={sliderRef}>
       <div className="track" ref={trackRef}>
         <div className="slide">
-          <img src='./Logo (1).png' alt="" />
-          <img src='./Logo (2).png' alt="" />
-          <img src='./Logo (3).png' alt="" />
-          <img src='./Logo (1).png' alt="" />
-          <img src='./Logo (2).png' alt="" />
-          <img src='./Logo (3).png' alt="" />
+          <img src='./Logo (1).png' alt="Logo (1)" />
+          <img src='./Logo (2).png' alt="Logo (2)" />
+          <img src='./Logo (3).png' alt="Logo (3)" />
+          <img src='./Logo (1).png' alt="Logo (1)" />
+          <img src='./Logo (2).png' alt="Logo (2)" />
+          <img src='./Logo (3).png' alt="Logo (3)" />
         </div>
 
         <div className="slide">
-          <img src='./Logo (1).png' alt="" />
-          <img src='./Logo (2).png' alt="" />
-          <img src='./Logo (3).png' alt="" />
-          <img src='./Logo (1).png' alt="" />
-          <img src='./Logo (2).png' alt="" />
-          <img src='./Logo (3).png' alt="" />
+          <img src='./Logo (1).png' alt="Logo (1)" />
+          <img src='./Logo (2).png' alt="Logo (2)" />
+          <img src='./Logo (3).png' alt="Logo (3)" />
+          <img src='./Logo (1).png' alt="Logo (1)" />
+          <img src='./Logo (2).png' alt="Logo (2)" />
+          <img src='./Logo (3).png' alt="Logo (3)" />
         </div>
 
         <div className="slide">
-          <img src='./Logo (1).png' alt="" />
-          <img src='./Logo (2).png' alt="" />
-          <img src='./Logo (3).png' alt="" />
-          <img src='./Logo (1).png' alt="" />
-          <img src='./Logo (2).png' alt="" />
-          <img src='./Logo (3).png' alt="" />
+          <img src='./Logo (1).png' alt="Logo (1)" />
+          <img src='./Logo (2).png' alt="Logo (2)" />
+          <img src='./Logo (3).png' alt="Logo (3)" />
+          <img src='./Logo (1).png' alt="Logo (1)" />
+          <img src='./Logo (2).png' alt="Logo (2)" />
+          <img src='./Logo (3).png' alt="Logo (3)" />
         </div>
       </div>
     </div>
