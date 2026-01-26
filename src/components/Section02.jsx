@@ -12,7 +12,7 @@ const Section02 = () => {
                 <h1 className='text-4xl font-medium font-clauson'>Everything You Need for Legal Documents</h1>
             </div>
 
-            <div className=' mt-25 mb-40 pl-16 grid gap-45'>
+            <div className=' mt-25  pl-16 grid gap-45'>
 
                 <div className='grid grid-cols-2'>
                     <div className=' pt-5 flex flex-col gap-10 pb-5'>

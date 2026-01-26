@@ -26,6 +26,7 @@ const Section01 = () => {
                 <h1 className='text-4xl font-medium font-clauson'>How It Work</h1>
             </div>
 
+
             <div className="relative w-full">
                 {/* Video */}
                 <video
@@ -52,53 +53,53 @@ const Section01 = () => {
 
             <div className='w-full grid grid-cols-3'>
 
-                <div 
-                tabIndex={0}
-                className=' p-1 rounded-2xl
-                focus-within:bg-linear-to-r
-               focus-within:from-[#E6F6FF]
-               focus-within:via-[#0000000A]
-               focus-within:to-[#0CA4FF]'>
+                <div
+                    tabIndex={0}
+                    className=' p-1 rounded-2xl
+                                focus-within:bg-linear-to-r
+                                focus-within:from-[#E6F6FF]
+                                focus-within:via-[#0000000A]
+                                focus-within:to-[#0CA4FF]'>
                     <div className='p-2 bg-white rounded-xl'>
-                        <div 
-                        tabIndex={0} // kbhi bhi focus ka use div pe karna ho to tabindex ko 0 rakhna hoga
-                        className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
+                        <div
+                            tabIndex={0} // kbhi bhi focus ka use div pe karna ho to tabindex ko 0 rakhna hoga
+                            className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
                          pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl'>
-                            <h2  className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Choose Document Type</h2>
+                            <h2 className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Choose Document Type</h2>
                             <p className='max-w-86 text-[#000000B2] -tracking-[1%] text-[16px] font-normal font-clauson'>Select from NDAs, service agreements, employment contracts, or loan agreements.</p>
                         </div>
                     </div>
                 </div>
 
-                <div 
-                tabIndex={0}
-                className='  p-1 rounded-2xl
+                <div
+                    tabIndex={0}
+                    className='  p-1 rounded-2xl
                 focus-within:bg-linear-to-r
                focus-within:from-[#E6F6FF]
                focus-within:via-[#0000000A]
                focus-within:to-[#0CA4FF]'>
                     <div className='p-2 bg-white rounded-xl'>
-                        <div 
-                        tabIndex={0}
-                        className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
+                        <div
+                            tabIndex={0}
+                            className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
                         pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl'>
-                            <h2  className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Answer Simple Questions</h2>
+                            <h2 className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Answer Simple Questions</h2>
                             <p className='max-w-90 text-[#000000B2] -tracking-[1%] text-[16px] font-normal font-clauson'>Our wizard walks you through a few questions about your specific needs.</p>
                         </div>
                     </div>
                 </div>
 
                 <div
-                tabIndex={0}
-                className=' p-1 bg-white rounded-2xl
+                    tabIndex={0}
+                    className=' p-1 bg-white rounded-2xl
                 focus-within:bg-linear-to-r
                focus-within:from-[#E6F6FF]
                focus-within:via-[#0000000A]
                focus-within:to-[#0CA4FF]'>
                     <div className='p-2 bg-white rounded-xl'>
-                        <div 
-                        tabIndex={0}
-                        className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
+                        <div
+                            tabIndex={0}
+                            className='bg-[#0D0D0D0D]  focus:bg-[radial-gradient(#FFFFFF,#B0DFFB)]
                         pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl'>
                             <h2 className='text-xl font-medium font-clauson -tracking-[1%] text-[#121215]'><span>icon</span>Download & Use</h2>
                             <p className='max-w-94 text-[#000000B2] -tracking-[1%] text-[16px] font-normal font-clauson'>Get your professional document instantly. Edit, save, and download as PDF or DOCX.</p>
