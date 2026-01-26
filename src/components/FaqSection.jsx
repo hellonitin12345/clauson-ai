@@ -62,7 +62,7 @@ export default function FAQ() {
                 text-left
               "
             >
-              <span className="font-medium text-sm md:text-base">
+              <span className="font-medium text-sm max-w-75 md:max-w-fit md:text-base">
                 {item.q}
               </span>
 
