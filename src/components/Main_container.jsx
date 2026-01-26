@@ -11,6 +11,7 @@ import PracticeSliderOppo from './PracticeSliderOppo'
 import Pricing from './Pricing'
 import FaqSection from './FaqSection'
 import HelpSection from './HelpSection'
+import PaperlessSection from './PaperLessSection'
 
 
 
@@ -30,6 +31,7 @@ const Main_container = () => {
           <Pricing/>
           <FaqSection/>
           <HelpSection/>
+          <PaperlessSection/>
           
           
           

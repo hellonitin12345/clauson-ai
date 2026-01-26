@@ -23,7 +23,7 @@ export default function FAQ() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="max-w-3xl mx-auto py-16 md:py-20 px-4 space-y-6">
+    <div className="max-w-3xl mx-auto px-4">
 
       {/* Heading */}
       <div className="flex flex-col gap-2 items-center text-center">
@@ -72,7 +72,7 @@ export default function FAQ() {
                 rounded-full
                 w-8 h-8 md:w-10 md:h-10
                 flex items-center justify-center
-                border border-solid pt-0.5 md:pb-1
+                border border-solid pt-0.5 md:pb-1 lg:pb-2
               ">
                 {isOpen ? "−" : "+"}
               </span>

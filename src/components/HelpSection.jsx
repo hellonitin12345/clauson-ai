@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const HelpSection = () => {
   return (
-    <section className="w-full bg-white py-16 lg:py-20 ">
+    <section className="w-full bg-white  ">
       <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           
@@ -18,7 +18,7 @@ const HelpSection = () => {
           {/* RIGHT FORM */}
           <div className="grid items-center justify-center lg:justify-start ">
             <div className="grid items-center">
-            <h2 className="text-3xl sm:text-4xl sm:w-fit font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl sm:w-fit font-bold text-gray-900 mb-8 font-clauson">
               We’d Love To Help
             </h2>
             </div>
