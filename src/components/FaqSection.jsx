@@ -72,7 +72,7 @@ export default function FAQ() {
                 rounded-full
                 w-8 h-8 md:w-10 md:h-10
                 flex items-center justify-center
-                border border-solid md:pb-1
+                border border-solid pt-0.5 md:pb-1
               ">
                 {isOpen ? "−" : "+"}
               </span>
