@@ -57,7 +57,7 @@ const HelpSection = () => {
               <textarea
                 placeholder="Message"
                 rows={4}
-                className="md:w-122 rounded-lg p-4 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
+                className="md:w-122 w-full rounded-lg p-4 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
               />
 
               {/* BUTTON */}
