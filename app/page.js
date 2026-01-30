@@ -1,13 +1,12 @@
-import FAQ from "./components/FaqSection";
-import HelpSection from "./components/HelpSection";
-import Hero from "./components/Hero";
-import InfiniteSlider from "./components/InfiniteSlider";
-import PracticeSlider from "./components/CardSlider";
-import PracticeSliderOppo from "./components/CardSliderReverse";
-import Pricing from "./components/Pricing";
-import Section01 from "./components/Section01";
-import Section02 from './components/Section02'
-import Section03 from "./components/Section03";
+import HeroSection from "@/components/home/HeroSection";
+import Section01 from "@/components/home/Section01";
+import Section02 from "@/components/home/Section02";
+import Section03 from '@/components/home/Section03';
+import Section04 from "@/components/home/Section04";
+import Section05 from "@/components/home/Section05";
+import Section06 from "@/components/home/Section06";
+import Section07 from "@/components/home/Section07";
+import Section08 from "@/components/home/Section08";
 
 
 
@@ -15,16 +14,15 @@ import Section03 from "./components/Section03";
 export default function Home() {
   return (
     <>
-    <Hero/>
-    <InfiniteSlider/>
+    <HeroSection/>
     <Section01/>
     <Section02/>
     <Section03/>
-    <PracticeSlider/>
-    <PracticeSliderOppo/>
-    <Pricing/>
-    <FAQ/>
-    <HelpSection/>
+    <Section04/>
+    <Section05/>
+    <Section06/>
+    <Section07/>
+    <Section08/>
    
     </>
   );

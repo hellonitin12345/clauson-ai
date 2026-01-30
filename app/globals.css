@@ -4,6 +4,133 @@ html {
   scroll-behavior: smooth;
 }
 
+#corner-design{
+    clip-path: circle(52.5% at 50% 0);
+   
+}
+#corner-bottom-design{
+   clip-path: circle(50% at 74% 82%);
+}
+
+
+
+.slider {
+  width: 95vw;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  margin: 70px 0;
+}
+
+.track {
+  display: flex;
+  will-change: transform;
+  gap: 70px;
+}
+
+.slide {
+  min-width: 100vw;
+  /* height: 300px;  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT SHADOW */
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    white,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* RIGHT SHADOW */
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(
+    to left,
+    white,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Default speed (desktop) */
+.animate-scroll-oppo {
+  animation: scroll 30s linear infinite reverse;
+}
+
+/* Tablet speed */
+@media (max-width: 1024px) {
+  .animate-scroll {
+    animation-duration: 40s;
+  }
+}
+
+/* Mobile speed */
+@media (max-width: 640px) {
+  .animate-scroll {
+    animation-duration: 50s;
+  }
+}
+
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Default speed (desktop) */
+.animate-scroll {
+  animation: scroll 30s linear infinite ;
+}
+
+/* Tablet speed */
+@media (max-width: 1024px) {
+  .animate-scroll {
+    animation-duration: 40s;
+  }
+}
+
+/* Mobile speed */
+@media (max-width: 640px) {
+  .animate-scroll {
+    animation-duration: 50s;
+  }
+}
+
+
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');  */
 /* @theme{
     --font-clauson:  'Space Grotesk', 'sans-serif';

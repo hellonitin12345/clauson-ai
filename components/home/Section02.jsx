@@ -1,0 +1,165 @@
+"use client";
+
+import { useRef, useState } from "react";
+import { Play } from "lucide-react";
+import Image from "next/image";
+import Lables from "@/components/Ui/Lables";
+
+const Section02 = () => {
+  const data = [
+    {
+      title: "Choose Document Type",
+      desc: "Select from NDAs, service agreements, employment contracts, or loan agreements.",
+      icon: "/mouse2.png",
+      video: "/sample-video-1.mp4",
+    },
+    {
+      title: "Answer Simple Questions",
+      desc: "Our wizard walks you through a few questions about your specific needs.",
+      icon: "/airplane-square.png",
+      video: "/sample-video-2.mp4",
+    },
+    {
+      title: "Download & Use",
+      desc: "Get your professional document instantly. Edit, save, and download as PDF or DOCX.",
+      icon: "/mouse2.png",
+      video: "/sample-video-1.mp4",
+    },
+  ];
+
+  const videoRef = useRef(null);
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  // ✅ same animation logic as Section04
+  const handleStepChange = (index) => {
+    if (index === activeIndex) return;
+
+    setIsAnimating(true);
+
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+
+    setIsPlaying(false);
+
+    setTimeout(() => {
+      setActiveIndex(index);
+      setIsAnimating(false);
+    }, 250);
+  };
+
+  const handlePlay = () => {
+    videoRef.current.play();
+    setIsPlaying(true);
+  };
+
+  const handlePause = () => {
+    videoRef.current.pause();
+    setIsPlaying(false);
+  };
+
+  return (
+    <div className="main-parent grid max-w-[90%] mx-auto mt-30 gap-8">
+      <Lables lable="Creation" heading="How It Works" />
+
+      {/* VIDEO */}
+      <div className="relative w-full mt-5 overflow-hidden">
+        <video
+          ref={videoRef}
+          src={data[activeIndex].video}
+          onClick={handlePause}
+          className={`w-full rounded-2xl transition-all duration-300
+            ${isAnimating ? "opacity-0 scale-95" : "opacity-100 scale-100"}
+          `}
+        />
+
+        {!isPlaying && (
+          <button
+            onClick={handlePlay}
+            className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-[#B1E0FC] flex items-center justify-center hover:bg-[#9fd9fb] transition"
+          >
+            <Play className="text-white" />
+          </button>
+        )}
+      </div>
+
+      {/* CARDS (Section04-style active logic) */}
+      <div className="grid grid-cols-3 gap-6">
+        {data.map((items, index) => {
+          const isActive = activeIndex === index;
+
+          return (
+            <div key={index} className="w-full">
+              {/* OUTER BORDER */}
+              <div
+                onClick={() => handleStepChange(index)}
+                className={`cursor-pointer rounded-2xl p-0.75 transition
+                  ${
+                    isActive
+                      ? "bg-linear-to-r from-[#E6F6FF] via-[#0000000A] to-[#0CA4FF]"
+                      : "bg-transparent"
+                  }
+                `}
+              >
+                {/* MIDDLE */}
+                <div
+                  className={`rounded-xl p-2 transition
+                    ${isActive ? "bg-white" : "bg-transparent"}
+                  `}
+                >
+                  {/* INNER */}
+                  <div
+                    className={`pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl transition-all duration-300
+                      ${
+                        isActive
+                          ? "bg-[#B1E0FC]"
+                          : "bg-[#0D0D0D0D]"
+                      }
+                    `}
+                  >
+                    <h2
+                      className={`flex items-center gap-3 text-xl font-medium font-clauson
+                        ${
+                          isActive
+                            ? "text-[#121215]"
+                            : "text-[#000000B2]"
+                        }
+                      `}
+                    >
+                      <Image
+                        src={items.icon}
+                        alt={items.title}
+                        width={32}
+                        height={32}
+                        priority={index === 0}
+                      />
+                      {items.title}
+                    </h2>
+
+                    <p
+                      className={`max-w-86 text-[16px] font-normal font-clauson
+                        ${
+                          isActive
+                            ? "text-[#121215]"
+                            : "text-[#000000B2]"
+                        }
+                      `}
+                    >
+                      {items.desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Section02;
