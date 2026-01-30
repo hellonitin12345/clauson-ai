@@ -33,7 +33,7 @@ const Section02 = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // ✅ same animation logic as Section04
+  // Same animation logic as Section04
   const handleStepChange = (index) => {
     if (index === activeIndex) return;
 
@@ -79,6 +79,8 @@ const Section02 = () => {
 
         {!isPlaying && (
           <button
+          /* ✅ IMPORTANT FIX */
+            type="button"   
             onClick={handlePlay}
             className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-[#B1E0FC] flex items-center justify-center hover:bg-[#9fd9fb] transition"
           >
