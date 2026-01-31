@@ -53,11 +53,11 @@ const Section03 = () => {
         heading="Everything You Need for Legal Documents"
       />
 
-      <div className="mt-25 pl-16 grid gap-45">
+      <div className="md:mt-25 md:pl-16 grid gap-45">
         {data.map((item, index) => (
-          <div className="grid grid-cols-2" key={index}>
+          <div className="grid md:grid-cols-2" key={index}>
             {/* TEXT */}
-            <div className="pt-5 flex flex-col gap-10 pb-5">
+            <div className="pt-5 flex flex-col md:gap-10 pb-5 items-center">
               <div>
                 <p className="text-[#10699E] font-bold font-clauson text-[14.47px] tracking-[5%] uppercase pl-2">
                   {item.heading}
@@ -65,7 +65,7 @@ const Section03 = () => {
                 <div className="bg-[#10699E] w-35 h-0.5 ml-2 mt-1"></div>
               </div>
 
-              <h1 className="font-medium text-4xl font-clauson max-w-38 leading-12 tracking-[-2%] text-[#121215]">
+              <h1 className="font-medium text-4xl font-clauson md:max-w-38 leading-12 tracking-[-2%] text-[#121215]">
                 {item.subHeading}
               </h1>
 
@@ -75,9 +75,9 @@ const Section03 = () => {
             </div>
 
             {/* IMAGE */}
-            <div className="bg-[#0D0D0D0D] pt-12 w-[86%] mx-auto rounded-xl">
+            <div className="bg-[#0D0D0D0D] md:pt-12 pt-6 md:w-[86%] w-full mx-auto rounded-xl">
               <div
-                className="w-110 h-85 mx-auto bg-no-repeat bg-center bg-contain"
+                className="md:w-110 md:h-85 h-50 mx-auto bg-no-repeat bg-center bg-contain"
                 style={{ backgroundImage: `url(${item.img})` }}
               />
             </div>

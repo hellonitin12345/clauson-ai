@@ -33,7 +33,6 @@ const Section02 = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Same animation logic as Section04
   const handleStepChange = (index) => {
     if (index === activeIndex) return;
 
@@ -63,7 +62,7 @@ const Section02 = () => {
   };
 
   return (
-    <div className="main-parent grid max-w-[90%] mx-auto mt-30 gap-8">
+    <div className="main-parent grid max-w-[90%] mx-auto mt-20 lg:mt-30 gap-10">
       <Lables lable="Creation" heading="How It Works" />
 
       {/* VIDEO */}
@@ -72,31 +71,29 @@ const Section02 = () => {
           ref={videoRef}
           src={data[activeIndex].video}
           onClick={handlePause}
-          className={`w-full rounded-2xl transition-all duration-300
+          className={`w-full rounded-xl lg:rounded-2xl transition-all duration-300
             ${isAnimating ? "opacity-0 scale-95" : "opacity-100 scale-100"}
           `}
         />
 
         {!isPlaying && (
           <button
-          /* ✅ IMPORTANT FIX */
-            type="button"   
+            type="button"
             onClick={handlePlay}
-            className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-[#B1E0FC] flex items-center justify-center hover:bg-[#9fd9fb] transition"
+            className="absolute inset-0 m-auto w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#B1E0FC] flex items-center justify-center hover:bg-[#9fd9fb] transition"
           >
             <Play className="text-white" />
           </button>
         )}
       </div>
 
-      {/* CARDS (Section04-style active logic) */}
-      <div className="grid grid-cols-3 gap-6">
+      {/* CARDS */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
         {data.map((items, index) => {
           const isActive = activeIndex === index;
 
           return (
             <div key={index} className="w-full">
-              {/* OUTER BORDER */}
               <div
                 onClick={() => handleStepChange(index)}
                 className={`cursor-pointer rounded-2xl p-0.75 transition
@@ -107,15 +104,13 @@ const Section02 = () => {
                   }
                 `}
               >
-                {/* MIDDLE */}
                 <div
                   className={`rounded-xl p-2 transition
                     ${isActive ? "bg-white" : "bg-transparent"}
                   `}
                 >
-                  {/* INNER */}
                   <div
-                    className={`pl-8 pt-4 pb-10 flex flex-col gap-4 rounded-xl transition-all duration-300
+                    className={`pl-5 lg:pl-8 pt-4 pb-8 lg:pb-10 flex flex-col gap-3 lg:gap-4 rounded-xl transition-all duration-300
                       ${
                         isActive
                           ? "bg-[#B1E0FC]"
@@ -124,7 +119,7 @@ const Section02 = () => {
                     `}
                   >
                     <h2
-                      className={`flex items-center gap-3 text-xl font-medium font-clauson
+                      className={`flex items-center gap-3 text-lg lg:text-xl font-medium font-clauson
                         ${
                           isActive
                             ? "text-[#121215]"
@@ -135,15 +130,15 @@ const Section02 = () => {
                       <Image
                         src={items.icon}
                         alt={items.title}
-                        width={32}
-                        height={32}
+                        width={28}
+                        height={28}
                         priority={index === 0}
                       />
                       {items.title}
                     </h2>
 
                     <p
-                      className={`max-w-86 text-[16px] font-normal font-clauson
+                      className={`max-w-full lg:max-w-86 text-sm lg:text-[16px] font-normal font-clauson
                         ${
                           isActive
                             ? "text-[#121215]"

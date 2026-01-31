@@ -2,49 +2,70 @@ import Button1 from "@/components/Ui/Button1";
 import Button2 from "@/components/Ui/Button2";
 
 const HeroSection = () => {
-    return (
-        <>
-            <div className=' w-full h-26 flex justify-center mt-20'>
-                <div className='flex justify-between'>
-                    <div className=' flex items-center'>
+  return (
+    <>
+      {/* TRUSTED USERS */}
+      <div className="w-full h-26 flex justify-center mt-10 md:mt-20">
+        <div className="flex md:flex-row items-center gap-4 md:gap-0 md:justify-between">
 
-                        <div className="w-12 h-12 rounded-full border-2 border-gray-500 relative z-40 bg-[#B1E0FC]"></div>
-                        <div className="w-12 h-12 rounded-full border-2 border-gray-500 -ml-3 relative bg-[#B1E0FC] z-30"></div>
-                        <div className="w-12 h-12 rounded-full border-2 border-gray-500 -ml-3 relative bg-[#B1E0FC] z-20"></div>
-                        <div className="flex justify-center items-center w-12 h-12 rounded-full border-2 border-gray-500 -ml-3 relative bg-[#B1E0FC] z-10 text-xs text-[#000000B2]">5M</div>
-                    </div>
-
-                    <div className='text-[#000000B2] flex items-center justify-center font-clauson'><p className='font-bold text-xl w-fit pl-5 max-w-70'>Trusted By 50M+ People Around The Globe</p></div>
-                </div>
-
+          <div className="flex items-center">
+            <div className="w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 relative z-40 bg-[#B1E0FC]" />
+            <div className="w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 -ml-2 relative bg-[#B1E0FC] z-30" />
+            <div className="w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 -ml-2 relative bg-[#B1E0FC] z-20" />
+            <div className="flex justify-center pl-1.5 md:pl-0 items-center w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 -ml-2 relative bg-[#B1E0FC] z-10 text-[11px] md:text-[15px] text-[#000000B2]">
+              5M
             </div>
+          </div>
 
-            <div className='  grid gap-5'>
-                <div className='flex justify-center font-clauson font-medium text-6xl'>
-                    <h1 className=' max-w-220 txt-h leading-15 text-center'> AI-Powered Legal Documents <span className='text-[#10699E]'>In Minutes, Not Hours</span></h1>
-                </div>
-                <div className='flex justify-center'>
-                    <p className='font-clauson font-normal text-xl max-w-234 text-center text-[#000000B2]'>Generate professional legal documents and get instant answers to your legal questions with our advanced AI assistant.</p>
-                </div>
+          <div className="text-[#000000B2] flex items-center justify-center font-clauson">
+            <p className="font-bold text-xs md:text-xl w-fit pl-0 md:pl-5 max-w-70 text-center md:text-left">
+              Trusted By 50M+ People Around The Globe
+            </p>
+          </div>
+        </div>
+      </div>
 
-{/* button is here */}
+      {/* MAIN CONTENT */}
+      <div className="grid gap-4 md:gap-5  md:mt-0 px-4 md:px-0">
+        <div className="flex justify-center font-clauson font-medium">
+          <h1 className="md:max-w-220 text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-15 text-center">
+            AI-Powered Legal Documents{" "}
+            <span className="text-[#10699E]">In Minutes, Not Hours</span>
+          </h1>
+        </div>
 
-                <div className='flex justify-center gap-5 mt-3'>
-                    <Button1 lable="Chat Now" className="md:w-56"/>
-                    <Button2/>
-                </div>
+        <div className="flex justify-center">
+          <p className="font-clauson font-normal text-base sm:text-lg md:text-xl max-w-234 text-center text-[#000000B2]">
+            Generate professional legal documents and get instant answers to your
+            legal questions with our advanced AI assistant.
+          </p>
+        </div>
 
-            </div>
+        {/* BUTTONS */}
+        <div className="flex sm:flex-row justify-center gap-4 md:gap-5 mt-3">
+          <Button1 lable="Chat Now" className="  md:w-56" />
+          <Button2 />
+        </div>
+      </div>
 
-            <div className=' absolute top-85 left-35'> <img src="./Vector.png" alt="" /></div>
-            <div className=' absolute top-65 right-35'> <img src="./Group 1000001781.png" alt="" /></div>
-            
-            <div className='relative w-full'>
-                <div id='corner-bottom-design' className='bg-[#B1E0FC] opacity-20 h-50 absolute -bottom-25 right-0 w-100 blur-lg '></div>
-            </div>
-            
-        </>
-    )
-}
+      {/* DECORATIVE IMAGES (HIDDEN ON MOBILE) */}
+      <div className="md:block absolute md:top-85 md:left-35 top-75">
+        <img src="./Vector.png" alt="" />
+      </div>
 
-export default HeroSection
+      <div className="hidden md:block absolute top-65 right-35">
+        <img src="./Group 1000001781.png" alt="" />
+      </div>
+
+      {/* BOTTOM BLUR */}
+      <div className="relative w-full">
+        <div
+          id="corner-bottom-design"
+          className="bg-[#B1E0FC] opacity-20 h-40 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-80 md:w-100 blur-lg"
+        ></div>
+      </div>
+    </>
+  );
+};
+
+export default HeroSection;
