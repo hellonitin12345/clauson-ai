@@ -31,12 +31,12 @@ const Section02 = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isFading, setIsFading] = useState(false);
 
   const handleStepChange = (index) => {
     if (index === activeIndex) return;
 
-    setIsAnimating(true);
+    setIsFading(true);
 
     if (videoRef.current) {
       videoRef.current.pause();
@@ -47,8 +47,8 @@ const Section02 = () => {
 
     setTimeout(() => {
       setActiveIndex(index);
-      setIsAnimating(false);
-    }, 250);
+      setIsFading(false);
+    }, 200);
   };
 
   const handlePlay = () => {
@@ -66,13 +66,14 @@ const Section02 = () => {
       <Lables lable="Creation" heading="How It Works" />
 
       {/* VIDEO */}
-      <div className="relative w-full mt-5 overflow-hidden">
+      <div className="relative w-full mt-5 overflow-hidden aspect-video">
         <video
           ref={videoRef}
           src={data[activeIndex].video}
           onClick={handlePause}
-          className={`w-full rounded-xl lg:rounded-2xl transition-all duration-300
-            ${isAnimating ? "opacity-0 scale-95" : "opacity-100 scale-100"}
+          className={`w-full h-full object-cover rounded-xl lg:rounded-2xl
+            transition-opacity duration-200 ease-in-out
+            ${isFading ? "opacity-0" : "opacity-100"}
           `}
         />
 
