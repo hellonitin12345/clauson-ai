@@ -57,7 +57,7 @@ const Section03 = () => {
         {data.map((item, index) => (
           <div className="grid md:grid-cols-2" key={index}>
             {/* TEXT */}
-            <div className="pt-5 flex flex-col md:gap-10 pb-5 items-center">
+            <div className="pt-5 flex flex-col md:gap-10 pb-5 items-center md:items-start">
               <div>
                 <p className="text-[#10699E] font-bold font-clauson text-[14.47px] tracking-[5%] uppercase pl-2">
                   {item.heading}
