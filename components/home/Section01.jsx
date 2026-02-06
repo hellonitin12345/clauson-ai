@@ -44,7 +44,7 @@ const Section01 = () => {
 
   return (
     <>
-    <h1 className="font-bold text-2xl md:text-4xl text-center font-clauson mt-40">Join the ranks of 500+ growing companies</h1>
+    <h1 className="font-bold text-2xl md:text-4xl text-center font-clauson lg:mt-40 mt-20">Join the ranks of 500+ growing companies</h1>
     <div className="slider" ref={sliderRef}>
       <div className="track" ref={trackRef}>
         <div className="slide">

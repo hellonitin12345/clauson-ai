@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
       {/* TRUSTED USERS */}
-      <div className="w-[90%] mx-auto h-26 flex justify-center mt-10 md:mt-20">
+      <div className="w-[90%] mx-auto h-26 flex justify-center mt-20 md:mt-20">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 md:justify-between">
 
           <div className="flex items-center">
@@ -28,7 +28,7 @@ const HeroSection = () => {
       {/* MAIN CONTENT */}
       <div className="grid gap-4 md:gap-5  md:mt-0 px-4 md:px-0">
         <div className="flex justify-center font-clauson font-medium">
-          <h1 className="md:max-w-220 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-15 text-center">
+          <h1 className="md:max-w-220 max-w-[300] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-15 text-center">
             AI-Powered Legal Documents
             <span className="text-[#10699E]">In Minutes, Not Hours</span>
           </h1>
@@ -42,26 +42,26 @@ const HeroSection = () => {
         </div>
 
         {/* BUTTONS */}
-        <div className="flex sm:flex-row justify-center gap-4 md:gap-5 mt-3">
+        <div className="flex sm:flex-row justify-center gap-4 md:gap-5 md:mt-3 mt-9">
           <Button1 lable="Chat Now" className="  md:w-56" />
           <Button2 />
         </div>
       </div>
 
-      {/* DECORATIVE IMAGES (HIDDEN ON MOBILE) */}
-      <div className="md:block absolute md:top-85 md:left-35 top-75">
-        <img src="./Vector.png" alt="" />
+      {/* DECORATIVE IMAGES */}
+      <div className="md:block absolute md:top-85 md:left-35 left-4 top-80">
+        <img src="./Vector.png" alt="decorative-img"  className="w-10 md:w-full"/>
       </div>
 
-      <div className="hidden md:block absolute top-65 right-35">
-        <img src="./Group 1000001781.png" alt="" />
+      <div className="md:block absolute top-65 right-5 md:right-35">
+        <img src="./Group 1000001781.png" alt="decorative-img"  className="w-10 md:w-full"/>
       </div>
 
       {/* BOTTOM BLUR */}
       <div className="relative w-full mt-7 md:m-0">
         <div
           id="corner-bottom-design"
-          className="bg-[#B1E0FC] opacity-20 h-20 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-50 md:w-100 blur-lg"
+          className=" hidden md:block bg-[#B1E0FC] opacity-20 h-20 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-50 md:w-100 blur-lg"
         ></div>
       </div>
     </>
