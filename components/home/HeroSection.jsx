@@ -28,8 +28,8 @@ const HeroSection = () => {
       {/* MAIN CONTENT */}
       <div className="grid gap-4 md:gap-5  md:mt-0 px-4 md:px-0">
         <div className="flex justify-center font-clauson font-medium">
-          <h1 className="md:max-w-220 text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-15 text-center">
-            AI-Powered Legal Documents{" "}
+          <h1 className="md:max-w-220 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-15 text-center">
+            AI-Powered Legal Documents
             <span className="text-[#10699E]">In Minutes, Not Hours</span>
           </h1>
         </div>
