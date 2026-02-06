@@ -8,7 +8,7 @@ const Footer = () => {
 
         {/* TEXT */}
          <h1 className="text-center text-white font-clauson font-medium lg:text-9xl
-         text-4xl md:text-5xl lg:-mt-18 lg:mb-55 lg:leading-33 lg:tracking-[-5%]">
+         text-5xl md:text-5xl lg:-mt-18 lg:mb-55 lg:leading-33 lg:tracking-[-5%]">
           No paper work<br /> 
           no waiting rooms.<br />
           Just quick scan,
