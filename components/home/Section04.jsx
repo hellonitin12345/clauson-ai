@@ -66,19 +66,19 @@ const Section04 = () => {
 
   return (
     <div className="grid max-w-[90%] mx-auto mt-25" id="solution">
-      <div className="flex flex-col gap-2 items-center px-10">
+      <div className="flex flex-col gap-2 items-center md:px-10">
         <Lables lable="Solutions" heading="How Lawyers Use Our AI" />
         {/* ---------------- TABS ---------------- */}
         <div
           className={[
-            "bg-[#0D0D0D0D] h-16 w-full mt-5 grid grid-cols-4 gap-px px-3 py-2 border border-solid border-[#12121533] rounded-xl mb-20",
+            "bg-[#0D0D0D0D] md:h-16 w-full mt-5 grid  md:grid-cols-4 md:gap-px gap-3 px-3 py-2 border border-solid border-[#12121533] rounded-xl mb-20",
           ].join(" ")}
         >
           {TAB_CONTENT.map((item, index) => (
             <div
               key={index}
               onClick={() => handleTabChange(index)}
-              className={`cursor-pointer rounded-md pt-[2.5px] px-0.5 transition
+              className={`cursor-pointer rounded-md pt-[2.5px] px-0.5 pb-[2.5px] md:pb-0 transition
                 ${
                   activeTab === index
                     ? "bg-linear-to-r from-[#E6F6FF] via-[#0000000A] to-[#0CA4FF] "
@@ -110,9 +110,9 @@ const Section04 = () => {
         </div>
 
         {/* ------------------------------------------------------ CONTENT -------------------------------------------------------------------- */}
-        <div className="grid grid-cols-2 border border-[#12121533] rounded-2xl overflow-hidden">
+        <div className="grid md:grid-cols-2 border border-[#12121533] rounded-2xl overflow-hidden">
           {/* VIDEO */}
-          <div className="relative w-210">
+          <div className="relative md:w-210">
             <video
               ref={videoRef}
               src={TAB_CONTENT[activeTab].video}
@@ -136,7 +136,7 @@ const Section04 = () => {
           </div>
 
           {/* TEXT */}
-          <div className="grid grid-rows-2 justify-center">
+          <div className="grid gap-4 md:grid-rows-2 justify-center">
             <div
               className={`grid md:items-end md:justify-center md:pl-36 md:pb-10 transition-all duration-300
                 ${
@@ -145,7 +145,7 @@ const Section04 = () => {
                     : "opacity-100 translate-y-0"
                 }`}
             >
-              <h1 className="max-w-64 font-clauson font-medium text-3xl">
+              <h1 className="md:max-w-64 font-clauson font-medium text-3xl">
                 {TAB_CONTENT[activeTab].title}
               </h1>
             </div>

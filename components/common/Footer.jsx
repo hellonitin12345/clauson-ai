@@ -4,17 +4,17 @@ const Footer = () => {
   return (
     <section className="w-full bg-white pt-15">
       {/* MAIN BLUE AREA */}
-      <div className="relative lg:h-130 md:mx-1 lg:mx-2 rounded-b-2xl bg-linear-to-r from-[#A1DAFF] to-[#B9E2FC]  overflow-hidden">
+      <div className="h-full md:mx-1 lg:mx-2 rounded-b-2xl bg-linear-to-r from-[#A1DAFF] to-[#B9E2FC]  overflow-hidden">
 
         {/* TEXT */}
-         <h1 className="text-center text-white tracking-[-5%] font-clauson font-medium lg:text-9xl
-         sm:text-4xl md:text-5xl absolute lg:-top-16 lg:left-50">
-          No paper work<br />
+         <h1 className="text-center text-white font-clauson font-medium lg:text-9xl
+         sm:text-4xl md:text-5xl ">
+          No paper work<br /> 
           no waiting rooms.<br />
           Just quick scan,
          </h1>
 
-         <img className="absolute bottom-0 lg:left-115 w-115" 
+         <img className="absolute bottom-0  lg:left-115 w-115" 
          src="/document.png" alt="" />
       </div>
 

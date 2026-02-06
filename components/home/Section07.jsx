@@ -48,7 +48,7 @@ export default function Section07() {
               </span>
 
               <span className={["text-xl md:text-2xl bg-gray-500 rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center" ,
-                "border border-solid pt-0.5 md:pb-1 lg:pb-2"].join(" ")}>
+                "border border-solid  md:pt-0.5 pb-1 lg:pb-2"].join(" ")}>
                 {isOpen ? "−" : "+"}
               </span>
             </button>

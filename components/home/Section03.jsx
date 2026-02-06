@@ -47,29 +47,29 @@ const Section03 = () => {
   ];
 
   return (
-    <div className="grid max-w-[90%] mx-auto mt-30" id="whyUs">
+    <div className="grid max-w-[90%] mx-auto md:mt-30 mt-20 " id="whyUs">
       <Lables
         lable="Why Us"
         heading="Everything You Need for Legal Documents"
       />
 
-      <div className="md:mt-25 md:pl-16 grid gap-45">
+      <div className=" mt-15 md:mt-25 md:pl-16 grid gap-25 md:gap-45">
         {data.map((item, index) => (
           <div className="grid md:grid-cols-2" key={index}>
             {/* TEXT */}
-            <div className="pt-5 flex flex-col md:gap-10 pb-5 items-center md:items-start">
-              <div>
-                <p className="text-[#10699E] font-bold font-clauson text-[14.47px] tracking-[5%] uppercase pl-2">
+            <div className="md:pt-5 flex flex-col md:gap-10 pb-5 items-center md:items-start">
+              <div className="flex flex-col w-full">
+                <p className="text-[#10699E] font-bold font-clauson md:text-[14.47px] text-xs tracking-[5%] uppercase md:pl-2">
                   {item.heading}
                 </p>
-                <div className="bg-[#10699E] w-35 h-0.5 ml-2 mt-1"></div>
+                <div className="bg-[#10699E] md:w-35 w-28.5 ml-px h-0.5 md:ml-2 mt-1"></div>
               </div>
 
-              <h1 className="font-medium text-4xl font-clauson md:max-w-38 leading-12 tracking-[-2%] text-[#121215]">
+              <h1 className="font-medium md:text-4xl w-full text-2xl font-clauson md:max-w-38 leading-12 tracking-[-2%] text-[#121215]">
                 {item.subHeading}
               </h1>
 
-              <p className="text-[#000000B2] font-clauson font-light text-lg max-w-125 leading-[32.55px] text-[19.89px]">
+              <p className="text-[#000000B2] font-clauson  font-light md:text-lg md:max-w-125 md:leading-[32.55px] md:text-[19.89px]">
                 {item.para}
               </p>
             </div>

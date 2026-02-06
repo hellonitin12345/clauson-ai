@@ -22,7 +22,7 @@ export default function Home() {
     <Section05/>
     <Section06/>
     <Section07/>
-    <Section08/>
+    <Section08/> 
    
     </>
   );

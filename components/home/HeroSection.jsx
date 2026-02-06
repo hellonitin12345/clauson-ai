@@ -5,8 +5,8 @@ const HeroSection = () => {
   return (
     <>
       {/* TRUSTED USERS */}
-      <div className="w-full h-26 flex justify-center mt-10 md:mt-20">
-        <div className="flex md:flex-row items-center gap-4 md:gap-0 md:justify-between">
+      <div className="w-[90%] mx-auto h-26 flex justify-center mt-10 md:mt-20">
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 md:justify-between">
 
           <div className="flex items-center">
             <div className="w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 relative z-40 bg-[#B1E0FC]" />
@@ -18,7 +18,7 @@ const HeroSection = () => {
           </div>
 
           <div className="text-[#000000B2] flex items-center justify-center font-clauson">
-            <p className="font-bold text-xs md:text-xl w-fit pl-0 md:pl-5 max-w-70 text-center md:text-left">
+            <p className="font-bold text-lg md:text-xl md:w-fit pl-0 md:pl-5 md:max-w-70 text-center md:text-left">
               Trusted By 50M+ People Around The Globe
             </p>
           </div>
@@ -58,10 +58,10 @@ const HeroSection = () => {
       </div>
 
       {/* BOTTOM BLUR */}
-      <div className="relative w-full">
+      <div className="relative w-full mt-7 md:m-0">
         <div
           id="corner-bottom-design"
-          className="bg-[#B1E0FC] opacity-20 h-40 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-80 md:w-100 blur-lg"
+          className="bg-[#B1E0FC] opacity-20 h-25 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-50 md:w-100 blur-lg"
         ></div>
       </div>
     </>

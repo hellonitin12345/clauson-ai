@@ -62,99 +62,89 @@ const Section02 = () => {
   };
 
   return (
-    <div className="main-parent grid max-w-[90%] mx-auto mt-20 lg:mt-30 gap-10">
+    <div className="main-parent grid  max-w-[90%] mx-auto mt-20 lg:mt-30 gap-10">
       <Lables lable="Creation" heading="How It Works" />
 
       {/* VIDEO */}
-      <div className="relative w-full mt-5 overflow-hidden aspect-video">
-        <video
-          ref={videoRef}
-          src={data[activeIndex].video}
-          onClick={handlePause}
-          className={`w-full h-full object-cover rounded-xl lg:rounded-2xl
+      <div className="flex flex-col-reverse md:flex md:flex-col">
+        <div className="relative w-full mt-5 overflow-hidden aspect-video">
+          <video
+            ref={videoRef}
+            src={data[activeIndex].video}
+            onClick={handlePause}
+            className={`w-full h-full object-cover rounded-xl lg:rounded-2xl
             transition-opacity duration-200 ease-in-out
             ${isFading ? "opacity-0" : "opacity-100"}
           `}
-        />
+          />
 
-        {!isPlaying && (
-          <button
-            type="button"
-            onClick={handlePlay}
-            className="absolute inset-0 m-auto w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#B1E0FC] flex items-center justify-center hover:bg-[#9fd9fb] transition"
-          >
-            <Play className="text-white" />
-          </button>
-        )}
-      </div>
+          {!isPlaying && (
+            <button
+              type="button"
+              onClick={handlePlay}
+              className="absolute inset-0 m-auto w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#B1E0FC] flex items-center justify-center hover:bg-[#9fd9fb] transition"
+            >
+              <Play className="text-white" />
+            </button>
+          )}
+        </div>
 
-      {/* CARDS */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-        {data.map((items, index) => {
-          const isActive = activeIndex === index;
+        {/* CARDS */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 md:mt-5">
+          {data.map((items, index) => {
+            const isActive = activeIndex === index;
 
-          return (
-            <div key={index} className="w-full">
-              <div
-                onClick={() => handleStepChange(index)}
-                className={`cursor-pointer rounded-2xl p-0.75 transition
+            return (
+              <div key={index} className="w-full">
+                <div
+                  onClick={() => handleStepChange(index)}
+                  className={`cursor-pointer rounded-2xl p-0.75 transition
                   ${
                     isActive
                       ? "bg-linear-to-r from-[#E6F6FF] via-[#0000000A] to-[#0CA4FF]"
                       : "bg-transparent"
                   }
                 `}
-              >
-                <div
-                  className={`rounded-xl p-2 transition
-                    ${isActive ? "bg-white" : "bg-transparent"}
-                  `}
                 >
                   <div
-                    className={`pl-5 lg:pl-8 pt-4 pb-8 lg:pb-10 flex flex-col gap-3 lg:gap-4 rounded-xl transition-all duration-300
-                      ${
-                        isActive
-                          ? "bg-[#B1E0FC]"
-                          : "bg-[#0D0D0D0D]"
-                      }
-                    `}
+                    className={`rounded-xl p-2 transition
+                    ${isActive ? "bg-white" : "bg-transparent"}
+                  `}
                   >
-                    <h2
-                      className={`flex items-center gap-3 text-lg lg:text-xl font-medium font-clauson
-                        ${
-                          isActive
-                            ? "text-[#121215]"
-                            : "text-[#000000B2]"
-                        }
-                      `}
+                    <div
+                      className={`pl-5 lg:pl-8 pt-4 pb-8 lg:pb-10 flex flex-col gap-3 lg:gap-4 rounded-xl transition-all duration-300
+                      ${isActive ? "bg-[#B1E0FC]" : "bg-[#0D0D0D0D]"}
+                    `}
                     >
-                      <Image
-                        src={items.icon}
-                        alt={items.title}
-                        width={28}
-                        height={28}
-                        priority={index === 0}
-                      />
-                      {items.title}
-                    </h2>
+                      <h2
+                        className={`flex items-center gap-3 text-lg lg:text-xl font-medium font-clauson
+                        ${isActive ? "text-[#121215]" : "text-[#000000B2]"}
+                      `}
+                      >
+                        <Image
+                          src={items.icon}
+                          alt={items.title}
+                          width={28}
+                          height={28}
+                          priority={index === 0}
+                        />
+                        {items.title}
+                      </h2>
 
-                    <p
-                      className={`max-w-full lg:max-w-86 text-sm lg:text-[16px] font-normal font-clauson
-                        ${
-                          isActive
-                            ? "text-[#121215]"
-                            : "text-[#000000B2]"
-                        }
+                      <p
+                        className={`max-w-full lg:max-w-86 text-sm lg:text-[16px] font-normal font-clauson
+                        ${isActive ? "text-[#121215]" : "text-[#000000B2]"}
                       `}
-                    >
-                      {items.desc}
-                    </p>
+                      >
+                        {items.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
