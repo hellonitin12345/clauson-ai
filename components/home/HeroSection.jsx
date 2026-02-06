@@ -61,7 +61,7 @@ const HeroSection = () => {
       <div className="relative w-full mt-7 md:m-0">
         <div
           id="corner-bottom-design"
-          className="bg-[#B1E0FC] opacity-20 h-25 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-50 md:w-100 blur-lg"
+          className="bg-[#B1E0FC] opacity-20 h-20 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-50 md:w-100 blur-lg"
         ></div>
       </div>
     </>
