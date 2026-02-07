@@ -48,30 +48,30 @@ const Section01 = () => {
     <div className="slider" ref={sliderRef}>
       <div className="track" ref={trackRef}>
         <div className="slide">
-          <img src='./Logo (1).png' alt="Logo (1)" />
-          <img src='./Logo (2).png' alt="Logo (2)" />
-          <img src='./Logo (3).png' alt="Logo (3)" />
-          <img src='./Logo (1).png' alt="Logo (1)" />
-          <img src='./Logo (2).png' alt="Logo (2)" />
-          <img src='./Logo (3).png' alt="Logo (3)" />
+          <img src='./Logo (1).png' alt="Logo (1)" className="w-30 md:w-auto"/>
+          <img src='./Logo (2).png' alt="Logo (2)" className="w-30 md:w-auto"/>
+          <img src='./Logo (3).png' alt="Logo (3)" className="w-30 md:w-auto"/>
+          <img src='./Logo (1).png' alt="Logo (1)" className="hidden md:block" />
+          <img src='./Logo (2).png' alt="Logo (2)" className="hidden md:block"/>
+          <img src='./Logo (3).png' alt="Logo (3)" className="hidden md:block"/>
         </div>
 
         <div className="slide">
-          <img src='./Logo (1).png' alt="Logo (1)" />
-          <img src='./Logo (2).png' alt="Logo (2)" />
-          <img src='./Logo (3).png' alt="Logo (3)" />
-          <img src='./Logo (1).png' alt="Logo (1)" />
-          <img src='./Logo (2).png' alt="Logo (2)" />
-          <img src='./Logo (3).png' alt="Logo (3)" />
+          <img src='./Logo (1).png' alt="Logo (1)" className="w-30 md:w-auto"/>
+          <img src='./Logo (2).png' alt="Logo (2)" className="w-30 md:w-auto"/>
+          <img src='./Logo (3).png' alt="Logo (3)" className="w-30 md:w-auto"/>
+          <img src='./Logo (1).png' alt="Logo (1)" className="hidden md:block"/>
+          <img src='./Logo (2).png' alt="Logo (2)" className="hidden md:block"/>
+          <img src='./Logo (3).png' alt="Logo (3)" className="hidden md:block"/>
         </div>
 
         <div className="slide">
-          <img src='./Logo (1).png' alt="Logo (1)" />
-          <img src='./Logo (2).png' alt="Logo (2)" />
-          <img src='./Logo (3).png' alt="Logo (3)" />
-          <img src='./Logo (1).png' alt="Logo (1)" />
-          <img src='./Logo (2).png' alt="Logo (2)" />
-          <img src='./Logo (3).png' alt="Logo (3)" />
+          <img src='./Logo (1).png' alt="Logo (1)" className="w-30 md:w-auto"/>
+          <img src='./Logo (2).png' alt="Logo (2)" className="w-30 md:w-auto"/>
+          <img src='./Logo (3).png' alt="Logo (3)" className="w-30 md:w-auto"/>
+          <img src='./Logo (1).png' alt="Logo (1)" className="hidden md:block"/>
+          <img src='./Logo (2).png' alt="Logo (2)" className="hidden md:block"/>
+          <img src='./Logo (3).png' alt="Logo (3)" className="hidden md:block"/>
         </div>
       </div>
     </div>

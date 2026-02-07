@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="flex justify-center font-clauson font-medium">
           <h1 className="md:max-w-220 max-w-[300] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-15 text-center">
             AI-Powered Legal Documents
-            <span className="text-[#10699E]">In Minutes, Not Hours</span>
+            <span className="text-[#10699E]"> In Minutes, Not Hours</span>
           </h1>
         </div>
 
@@ -49,11 +49,11 @@ const HeroSection = () => {
       </div>
 
       {/* DECORATIVE IMAGES */}
-      <div className="md:block absolute md:top-85 md:left-35 left-4 top-80">
+      <div className="md:block absolute md:top-85 md:left-35 left-4 top-83">
         <img src="./Vector.png" alt="decorative-img"  className="w-10 md:w-full"/>
       </div>
 
-      <div className="md:block absolute top-65 right-5 md:right-35">
+      <div className="md:block absolute md:top-65 top-63 right-5 md:right-35">
         <img src="./Group 1000001781.png" alt="decorative-img"  className="w-10 md:w-full"/>
       </div>
 

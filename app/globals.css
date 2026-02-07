@@ -17,7 +17,7 @@ html {
 .slider {
   width: 95vw;
   overflow: hidden;
-  margin: 0 auto;
+  /* margin: 0 auto;  */
   position: relative;
   margin: 70px 0;
 }
@@ -27,6 +27,11 @@ html {
   will-change: transform;
   gap: 70px;
 }
+@media (max-width: 768px) {
+  .track {
+      gap: 4px;
+  }
+}
 
 .slide {
   min-width: 100vw;
@@ -34,6 +39,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .slide {
+      margin-left: 10px;
+  }
 }
 
 /* LEFT SHADOW */
