@@ -145,7 +145,7 @@ const Section04 = () => {
                     : "opacity-100 translate-y-0"
                 }`}
             >
-              <h1 className="md:max-w-64 font-clauson font-medium text-3xl">
+              <h1 className="md:max-w-64 font-clauson font-medium mt-2 md:mt-0 text-2xl md:text-3xl">
                 {TAB_CONTENT[activeTab].title}
               </h1>
             </div>
@@ -158,7 +158,7 @@ const Section04 = () => {
                     : "opacity-100 translate-y-0"
                 }`}
             >
-              <p className="max-w-85 font-clauson font-light text-[#000000B2] text-xl">
+              <p className="max-w-85 font-clauson font-light text-[#000000B2] mb-5 md:mb-0 md:text-xl">
                 {TAB_CONTENT[activeTab].text}
               </p>
             </div>

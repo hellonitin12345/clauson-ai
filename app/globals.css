@@ -21,6 +21,11 @@ html {
   position: relative;
   margin: 70px 0;
 }
+@media (max-width: 768px) {
+  .slider {
+      width: 100vw;
+  }
+}
 
 .track {
   display: flex;
@@ -29,7 +34,7 @@ html {
 }
 @media (max-width: 768px) {
   .track {
-      gap: 4px;
+      gap: 14px;
   }
 }
 
@@ -43,7 +48,9 @@ html {
 
 @media (max-width: 768px) {
   .slide {
-      margin-left: 10px;
+      /* margin-left: 10px; */
+      width: 100%;
+      gap: 4px;
   }
 }
 

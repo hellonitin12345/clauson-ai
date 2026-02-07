@@ -32,23 +32,24 @@ export default function Section07() {
       <div className="flex flex-col gap-2 items-center text-center">
         <Lables lable="Questions" heading="FAQ"/>
       </div>
-
+      
       {faqs.map((item, index) => {
         const isOpen = active === index;
 
         return (
+          
           <div key={index} className="relative mt-8 md:mt-10">
 
             {/* Question */}
             <button
               onClick={() => setActive(isOpen ? null : index)}
               className={["w-full sm:w-fit min-h-20 bg-[#10699E] text-white px-4 md:px-6 py-4 md:py-6 rounded-xl flex justify-between items-center gap-4 text-left"].join(" ")}>
-              <span className="font-medium text-sm max-w-75 md:max-w-fit md:text-base">
+              <span className="font-medium text-sm max-w-65 md:max-w-fit md:text-base">
                 {item.q}
               </span>
 
               <span className={["text-xl md:text-2xl bg-gray-500 rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center" ,
-                "border border-solid  md:pt-0.5 pb-1 lg:pb-2"].join(" ")}>
+                "border border-solid  md:pt-0.5 pb-1  lg:pb-2"].join(" ")}>
                 {isOpen ? "−" : "+"}
               </span>
             </button>
@@ -57,7 +58,7 @@ export default function Section07() {
             <div
               className={`absolute left-0 right-0 top-12 md:top-13 transition-all duration-500 ease-in-out
               ${isOpen ? "opacity-100 translate-y-0 mt-4 md:mt-6" : "opacity-0 -translate-y-2 pointer-events-none"}`}>
-              <div className="shadow-xl rounded-lg p-4 md:p-6 w-full sm:w-fit bg-white">
+              <div className="shadow-xl rounded-lg mt-2.5 md:mt-0 p-4 md:p-6 w-full sm:w-fit bg-white">
                 <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                   {item.a}
                 </p>
