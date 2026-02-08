@@ -1,71 +1,76 @@
-import Button1 from "@/components/Ui/Button1";
-import Button2 from "@/components/Ui/Button2";
+import Button1 from "@/components/Ui/Button1"
+import Button2 from "@/components/Ui/Button2"
 
 const HeroSection = () => {
   return (
-    <>
-      {/* TRUSTED USERS */}
-      <div className="w-[90%] mx-auto h-26 flex justify-center mt-20 md:mt-20">
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 md:justify-between">
+    <section className="relative transition-all duration-500">
 
+      {/* TRUSTED USERS */}
+      <div className="w-[90%] mx-auto flex justify-center mt-10 md:mt-20">
+        <div className="flex flex-col md:flex-row items-center gap-3 md:gap-0 md:justify-between">
+
+          {/* AVATARS */}
           <div className="flex items-center">
-            <div className="w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 relative z-40 bg-[#B1E0FC]" />
-            <div className="w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 -ml-2 relative bg-[#B1E0FC] z-30" />
-            <div className="w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 -ml-2 relative bg-[#B1E0FC] z-20" />
-            <div className="flex justify-center pl-1.5 md:pl-0 items-center w-7 h-7 md:w-12 md:h-12 rounded-full border-2 border-gray-500 -ml-2 relative bg-[#B1E0FC] z-10 text-[11px] md:text-[15px] text-[#000000B2]">
+            <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border border-gray-400 bg-[#B1E0FC] z-40" />
+            <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border border-gray-400 bg-[#B1E0FC] -ml-2 z-30" />
+            <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border border-gray-400 bg-[#B1E0FC] -ml-2 z-20" />
+            <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border border-gray-400 bg-[#B1E0FC] -ml-2 z-10 flex items-center justify-center text-xs md:text-base text-black/70">
               5M
             </div>
           </div>
 
-          <div className="text-[#000000B2] flex items-center justify-center font-clauson">
-            <p className="font-bold text-lg md:text-xl md:w-fit pl-0 md:pl-5 md:max-w-70 text-center md:text-left">
-              Trusted By 50M+ People Around The Globe
-            </p>
-          </div>
+          {/* TEXT */}
+          <p className="font-clauson font-semibold text-sm md:text-xl text-center md:text-left text-black/70 md:pl-5">
+            Trusted By 50M+ People Around The Globe
+          </p>
         </div>
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="grid gap-4 md:gap-5  md:mt-0 px-4 md:px-0">
-        <div className="flex justify-center font-clauson font-medium">
-          <h1 className="md:max-w-220 max-w-[300] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-15 text-center">
-            AI-Powered Legal Documents
-            <span className="text-[#10699E]"> In Minutes, Not Hours</span>
-          </h1>
-        </div>
+      <div className="mt-8 md:mt-0 grid gap-5 px-4 md:px-0">
 
-        <div className="flex justify-center">
-          <p className="font-clauson font-normal text-base sm:text-lg md:text-xl max-w-234 text-center text-[#000000B2]">
-            Generate professional legal documents and get instant answers to your
-            legal questions with our advanced AI assistant.
-          </p>
-        </div>
+        {/* HEADING */}
+        <h1 className="font-clauson font-medium text-center
+          text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+          leading-snug md:leading-tight
+          max-w-[95%] md:max-w-220 mx-auto">
+          AI-Powered Legal Documents
+          <span className="text-[#10699E]"> In Minutes, Not Hours</span>
+        </h1>
+
+        {/* DESCRIPTION */}
+        <p className="font-clauson text-center text-base sm:text-lg md:text-xl
+          text-black/70 max-w-[90%] md:max-w-234 mx-auto">
+          Generate professional legal documents and get instant answers to
+          your legal questions with our advanced AI assistant.
+        </p>
 
         {/* BUTTONS */}
-        <div className="flex sm:flex-row justify-center gap-4 md:gap-5 md:mt-3 mt-9">
-          <Button1 lable="Chat Now" className="  md:w-56" />
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 md:mt-3">
+          <Button1 lable="Chat Now" className="w-full sm:w-auto md:w-56" />
           <Button2 />
         </div>
       </div>
 
-      {/* DECORATIVE IMAGES */}
-      <div className="md:block absolute md:top-85 md:left-35 left-4 top-83">
-        <img src="./Vector.png" alt="decorative-img"  className="w-10 md:w-full"/>
+      {/* DECORATIVE IMAGES (DESKTOP ONLY) */}
+      <div className="hidden md:block absolute top-85 left-35">
+        <img src="./Vector.png" alt="decorative-img" />
       </div>
 
-      <div className="md:block absolute md:top-65 top-63 right-5 md:right-35">
-        <img src="./Group 1000001781.png" alt="decorative-img"  className="w-10 md:w-full"/>
+      <div className="hidden md:block absolute top-65 right-35">
+        <img src="./Group 1000001781.png" alt="decorative-img" />
       </div>
 
-      {/* BOTTOM BLUR */}
-      <div className="relative w-full mt-7 md:m-0">
+      {/* BOTTOM BLUR (DESKTOP ONLY) */}
+      <div className="hidden md:block relative w-full">
         <div
           id="corner-bottom-design"
-          className=" hidden md:block bg-[#B1E0FC] opacity-20 h-20 md:h-50 absolute -bottom-20 md:-bottom-25 right-0 w-50 md:w-100 blur-lg"
-        ></div>
+          className="bg-[#B1E0FC] opacity-20 h-50 absolute -bottom-25 right-0 w-100 blur-lg"
+        />
       </div>
-    </>
-  );
-};
 
-export default HeroSection;
+    </section>
+  )
+}
+
+export default HeroSection
