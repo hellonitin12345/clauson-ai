@@ -53,11 +53,11 @@ const HeroSection = () => {
       </div>
 
       {/* DECORATIVE IMAGES (DESKTOP ONLY) */}
-      <div className="hidden md:block absolute top-85 left-35">
+      <div className="absolute top-45 left-12 md:top-30 md:left-30 w-10 md:w-fit">
         <img src="./Vector.png" alt="decorative-img" />
       </div>
 
-      <div className="hidden md:block absolute top-65 right-35">
+      <div className="absolute top-25 right-5 md:top-5 md:right-30 w-10 md:w-fit">
         <img src="./Group 1000001781.png" alt="decorative-img" />
       </div>
 

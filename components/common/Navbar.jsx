@@ -13,17 +13,17 @@ const Navbar = () => {
       <header className="relative z-50 w-full bg-white">
 
         {/* NAVBAR BACKGROUND CLIP (IMPORTANT FIX) */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden md:overflow-visible">
           {/* BLUE BLUR (STRICTLY NAVBAR HEIGHT) */}
           <div
             aria-hidden
-            className="absolute top-0 -left-20 w-50 h-40 lg:w-100 lg:h-50 bg-[#B1E0FC] opacity-20 blur-lg pointer-events-none"
+            className="absolute top-0 -left-20 w-50 h-40 lg:w-100 lg:h-50 bg-[#B1E0FC] opacity-20 blur-lg pointer-events-none " id="corner-design"
           />
 
           {/* NAVBAR */}
-          <nav className="relative z-10 grid grid-cols-2 md:grid-cols-3 items-center md:px-4 lg:px-0 border-b border-black/10">
+          <nav className="relative z-10 grid grid-cols-2 md:grid-cols-3 items-center md:px-4 lg:px-0 border-b border-black/10 md:border-none">
             {/* LOGO */}
-            <div className="text-xl lg:text-4xl flex items-center lg:pl-20 py-4 lg:py-9">
+            <div className="text-xl lg:text-4xl flex items-center lg:pl-15 py-4 lg:py-9">
               <h1 className="text-black font-clauson">ClausonAI</h1>
             </div>
 
@@ -53,9 +53,9 @@ const Navbar = () => {
         {/* MOBILE MENU (SEPARATE FROM BLUR) */}
         <div
           className={`md:hidden bg-white transition-all duration-500 ease-in-out
-          ${open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
+          ${open ? "max-h-125 opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
         >
-          <div className="flex flex-col text-xl">
+          <div className="flex flex-col text-[15px]">
             <Link
               href="#whyUs"
               onClick={() => setOpen(false)}

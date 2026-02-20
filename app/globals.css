@@ -4,9 +4,15 @@ html {
   scroll-behavior: smooth;
 }
 
-#corner-design{
+
+/* Laptop and above (Tailwind lg breakpoint = 1024px) */
+
+@media (min-width:720px){
+
+  #corner-design{
     clip-path: circle(52.5% at 50% 0);
-   
+  }
+
 }
 #corner-bottom-design{
    clip-path: circle(50% at 74% 82%);

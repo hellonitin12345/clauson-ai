@@ -16,9 +16,9 @@ const Section08 = () => {
           </div>
 
           {/* RIGHT FORM */}
-          <div className="grid items-center justify-center lg:justify-start ">
+          <div className="grid items-center w-[90%] mx-auto md:mx-0 md:w-0 lg:justify-start ">
             <div className="grid items-center">
-            <h2 className="text-3xl sm:text-4xl sm:w-fit font-bold text-gray-900 mb-8 font-clauson">
+            <h2 className="text-3xl sm:text-4xl text-center sm:w-fit font-bold text-gray-900 mb-8 font-clauson">
               We’d Love To Help
             </h2>
             </div>
@@ -26,30 +26,30 @@ const Section08 = () => {
             <form className="space-y-6">
               
               {/* ROW 1 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 w-fit gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-fit gap-5">
                 <input
                   type="text"
                   placeholder="Your name"
-                  className="w-fit rounded-lg pl-5 pr-8 py-3  bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
+                  className="w-full md:w-fit rounded-lg pl-5 pr-8 py-3  bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
                 />
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="w-fit rounded-lg pl-5 pr-8  py-3 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
+                  className="w-full md:w-fit rounded-lg pl-5 pr-8  py-3 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
                 />
               </div>
 
               {/* ROW 2 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-fit">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full md:w-fit">
                 <input
                   type="tel"
                   placeholder="Telephone"
-                  className="w-fit rounded-lg pl-5 pr-8  py-3 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
+                  className="w-full md:w-fit rounded-lg pl-5 pr-8  py-3 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
                 />
                 <input
                   type="text"
                   placeholder="Personal"
-                  className="w-fit rounded-lg pl-5 pr-8  py-3 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
+                  className="w-full md:w-fit rounded-lg pl-5 pr-8  py-3 bg-[#0D0D0D0D] border border-[#12121533] outline-none focus:ring-2 focus:ring-sky-400"
                 />
               </div>
 
